@@ -1,13 +1,13 @@
-package com.avocado.pizziochat;
+package com.avocado.pizziotalktalk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PizzioChatApplication {
+public class PizzioTalkTalkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PizzioChatApplication.class, args);
+		SpringApplication.run(PizzioTalkTalkApplication.class, args);
 	}
 
 }

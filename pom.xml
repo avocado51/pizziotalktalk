@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.avocado</groupId>
-	<artifactId>pizzio-chat</artifactId>
+	<artifactId>pizziotalktalk</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pizzio-chat</name>
+	<name>pizzioTalkTalk</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
