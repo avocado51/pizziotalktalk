@@ -11,9 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserDto {
   @Size(min = 2, max = 50)
-  private String name;
-
-  @Size(min = 2, max = 50)
   private String nickName;
 
   @Size(min = 8, max = 50)

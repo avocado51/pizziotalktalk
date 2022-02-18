@@ -31,6 +31,8 @@ public class UserController {
     Users user = new Users();
 
     user.setId(userId);
+    user.setName(userDto.getNickName());
+    user.setPassword(userDto.getPassword());
     user.setCreatedAt(LocalDateTime.now());
 
     Users savedUsers = userService.createUsers(user);
@@ -49,11 +51,11 @@ public class UserController {
     Users user = userService.findUsers(userId);
 
     if (user == null) {
-      throw new NoUserIdException("해당 아이디는 존재하지 않습니다.");
+      throw new NoUserIdException("해당 아이디/비밀번호는 존재하지 않습니다.");
     }
 
     if (!userService.checkPassword(userDto.getPassword(), user)) {
-      throw new NoUserIdException("해당 아이디는 존재하지 않습니다.");
+      throw new NoUserIdException("해당 아이디/비밀번호는 존재하지 않습니다.");
     }
 
     ResponseMessage responseMessage = new ResponseMessage();

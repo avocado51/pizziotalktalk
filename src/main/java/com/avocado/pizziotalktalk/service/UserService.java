@@ -27,7 +27,7 @@ public class UserService {
       user.setPassword(encodedPassword);
       savedUsers = userRepository.save(user);
     } catch(Exception e) {
-      throw new DuplicatedUsersException("중복된 이름이 존재합니다.");
+      throw new DuplicatedUsersException("중복된 아이디가 존재합니다.");
     }
     return savedUsers;
   }
