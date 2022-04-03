@@ -30,7 +30,8 @@ public class UserController {
   public ResponseEntity<ResponseMessage> signUp(@RequestHeader("X-USER-ID") String userId, @RequestBody UserDto userDto) {
     Users user = new Users();
 
-    user.setId(userId);
+//    user.setId(userId);
+    user.setNickName(userDto.getNickName());
     user.setName(userDto.getNickName());
     user.setPassword(userDto.getPassword());
     user.setCreatedAt(LocalDateTime.now());

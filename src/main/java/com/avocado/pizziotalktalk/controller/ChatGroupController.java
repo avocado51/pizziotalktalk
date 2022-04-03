@@ -8,6 +8,6 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/talk-groups")
 @RequiredArgsConstructor
-public class TalkGroupController {
+public class ChatGroupController {
 
 }

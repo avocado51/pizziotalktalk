@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/talks")
 @RequiredArgsConstructor
-public class TalkController {
+public class ChatController {
 
 	private final UserService userService;
 
